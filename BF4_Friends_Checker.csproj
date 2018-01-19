@@ -101,25 +101,25 @@
     <Compile Include="Battlelog\Models\WarsawFriends.cs" />
     <Compile Include="Battlelog\Models\WarsawOverview.cs" />
     <Compile Include="Battlelog\Models\WarsawStats.cs" />
-    <Compile Include="Extensions.cs" />
-    <Compile Include="Friends_BF4.cs">
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Forms\Friends_BF4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Friends_BF4.Designer.cs">
+    <Compile Include="Forms\Friends_BF4.Designer.cs">
       <DependentUpon>Friends_BF4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListViewColumSorter.cs" />
-    <Compile Include="LogType.cs" />
+    <Compile Include="Helpers\ListViewColumSorter.cs" />
+    <Compile Include="Helpers\LogType.cs" />
     <Compile Include="Models\Friend.cs" />
-    <Compile Include="PeriodOfTimeOutput.cs" />
+    <Compile Include="Helpers\PeriodOfTimeOutput.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Prompt.cs" />
+    <Compile Include="Forms\Prompt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -137,10 +137,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Friends_BF4.resx">
+    <EmbeddedResource Include="Forms\Friends_BF4.resx">
       <DependentUpon>Friends_BF4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
