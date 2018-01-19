@@ -133,6 +133,7 @@ namespace BF4_Friends_Checker
         #region Events
         private void btn_start_Click(object sender, EventArgs e) {
             try {
+                authentication = new Auth();
                 authentication.Login(tBox_email.Text, tBox_password.Text, Properties.Settings.Default._nx_mpcid);
                 authentication.RetrieveInfo();
                 Properties.Settings.Default._nx_mpcid = (!string.IsNullOrEmpty(authentication.SecondFactoryAuthToken) ? authentication.SecondFactoryAuthToken : Properties.Settings.Default._nx_mpcid);
