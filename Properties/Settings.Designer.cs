@@ -58,5 +58,17 @@ namespace BF4_Friends_Checker.Properties {
                 this["_nx_mpcid"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SoldierName {
+            get {
+                return ((string)(this["SoldierName"]));
+            }
+            set {
+                this["SoldierName"] = value;
+            }
+        }
     }
 }

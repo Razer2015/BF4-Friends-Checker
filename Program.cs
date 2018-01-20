@@ -1,18 +1,14 @@
-﻿using Battlelog;
-using Newtonsoft.Json;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
+﻿using System;
+using System.Windows.Forms;
 
 namespace BF4_Friends_Checker
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args) {
-            new Main().ShowDialog();
+            Application.EnableVisualStyles();
+            Application.Run(new Main());
         }
     }
 }

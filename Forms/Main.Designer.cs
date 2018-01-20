@@ -26,6 +26,11 @@
         /// </summary>
         private void InitializeComponent() {
             this.gBox_setup = new System.Windows.Forms.GroupBox();
+            this.btn_clear3 = new System.Windows.Forms.Button();
+            this.btn_clear2 = new System.Windows.Forms.Button();
+            this.btn_clear1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tBox_soldierName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tBox_password = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,6 +47,11 @@
             // 
             // gBox_setup
             // 
+            this.gBox_setup.Controls.Add(this.btn_clear3);
+            this.gBox_setup.Controls.Add(this.btn_clear2);
+            this.gBox_setup.Controls.Add(this.btn_clear1);
+            this.gBox_setup.Controls.Add(this.label3);
+            this.gBox_setup.Controls.Add(this.tBox_soldierName);
             this.gBox_setup.Controls.Add(this.label2);
             this.gBox_setup.Controls.Add(this.tBox_password);
             this.gBox_setup.Controls.Add(this.label1);
@@ -49,10 +59,61 @@
             this.gBox_setup.Dock = System.Windows.Forms.DockStyle.Top;
             this.gBox_setup.Location = new System.Drawing.Point(0, 0);
             this.gBox_setup.Name = "gBox_setup";
-            this.gBox_setup.Size = new System.Drawing.Size(693, 80);
+            this.gBox_setup.Size = new System.Drawing.Size(693, 102);
             this.gBox_setup.TabIndex = 0;
             this.gBox_setup.TabStop = false;
             this.gBox_setup.Text = "Information";
+            // 
+            // btn_clear3
+            // 
+            this.btn_clear3.Location = new System.Drawing.Point(638, 71);
+            this.btn_clear3.Name = "btn_clear3";
+            this.btn_clear3.Size = new System.Drawing.Size(52, 23);
+            this.btn_clear3.TabIndex = 8;
+            this.btn_clear3.Tag = "soldiername";
+            this.btn_clear3.Text = "Clear";
+            this.btn_clear3.UseVisualStyleBackColor = true;
+            this.btn_clear3.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // btn_clear2
+            // 
+            this.btn_clear2.Location = new System.Drawing.Point(638, 43);
+            this.btn_clear2.Name = "btn_clear2";
+            this.btn_clear2.Size = new System.Drawing.Size(52, 23);
+            this.btn_clear2.TabIndex = 7;
+            this.btn_clear2.Tag = "password";
+            this.btn_clear2.Text = "Clear";
+            this.btn_clear2.UseVisualStyleBackColor = true;
+            this.btn_clear2.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // btn_clear1
+            // 
+            this.btn_clear1.Location = new System.Drawing.Point(638, 17);
+            this.btn_clear1.Name = "btn_clear1";
+            this.btn_clear1.Size = new System.Drawing.Size(52, 23);
+            this.btn_clear1.TabIndex = 6;
+            this.btn_clear1.Tag = "email";
+            this.btn_clear1.Text = "Clear";
+            this.btn_clear1.UseVisualStyleBackColor = true;
+            this.btn_clear1.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "SoldierName (Optional)";
+            // 
+            // tBox_soldierName
+            // 
+            this.tBox_soldierName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tBox_soldierName.Location = new System.Drawing.Point(147, 73);
+            this.tBox_soldierName.Name = "tBox_soldierName";
+            this.tBox_soldierName.Size = new System.Drawing.Size(485, 20);
+            this.tBox_soldierName.TabIndex = 4;
             // 
             // label2
             // 
@@ -67,10 +128,10 @@
             // 
             this.tBox_password.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tBox_password.Location = new System.Drawing.Point(71, 45);
+            this.tBox_password.Location = new System.Drawing.Point(147, 45);
             this.tBox_password.Name = "tBox_password";
             this.tBox_password.PasswordChar = '*';
-            this.tBox_password.Size = new System.Drawing.Size(619, 20);
+            this.tBox_password.Size = new System.Drawing.Size(485, 20);
             this.tBox_password.TabIndex = 2;
             // 
             // label1
@@ -86,9 +147,9 @@
             // 
             this.tBox_email.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tBox_email.Location = new System.Drawing.Point(71, 19);
+            this.tBox_email.Location = new System.Drawing.Point(147, 19);
             this.tBox_email.Name = "tBox_email";
-            this.tBox_email.Size = new System.Drawing.Size(619, 20);
+            this.tBox_email.Size = new System.Drawing.Size(485, 20);
             this.tBox_email.TabIndex = 0;
             // 
             // gBox_actions
@@ -96,7 +157,7 @@
             this.gBox_actions.Controls.Add(this.btn_stop);
             this.gBox_actions.Controls.Add(this.btn_start);
             this.gBox_actions.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gBox_actions.Location = new System.Drawing.Point(0, 80);
+            this.gBox_actions.Location = new System.Drawing.Point(0, 102);
             this.gBox_actions.Name = "gBox_actions";
             this.gBox_actions.Size = new System.Drawing.Size(693, 59);
             this.gBox_actions.TabIndex = 1;
@@ -129,9 +190,9 @@
             // 
             this.gBox_logs.Controls.Add(this.rTBox_logs);
             this.gBox_logs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gBox_logs.Location = new System.Drawing.Point(0, 139);
+            this.gBox_logs.Location = new System.Drawing.Point(0, 161);
             this.gBox_logs.Name = "gBox_logs";
-            this.gBox_logs.Size = new System.Drawing.Size(693, 203);
+            this.gBox_logs.Size = new System.Drawing.Size(693, 181);
             this.gBox_logs.TabIndex = 2;
             this.gBox_logs.TabStop = false;
             this.gBox_logs.Text = "Logs";
@@ -141,7 +202,7 @@
             this.rTBox_logs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rTBox_logs.Location = new System.Drawing.Point(3, 16);
             this.rTBox_logs.Name = "rTBox_logs";
-            this.rTBox_logs.Size = new System.Drawing.Size(687, 184);
+            this.rTBox_logs.Size = new System.Drawing.Size(687, 162);
             this.rTBox_logs.TabIndex = 0;
             this.rTBox_logs.Text = "";
             // 
@@ -176,6 +237,11 @@
         private System.Windows.Forms.GroupBox gBox_logs;
         private System.Windows.Forms.RichTextBox rTBox_logs;
         private System.Windows.Forms.Button btn_stop;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tBox_soldierName;
+        private System.Windows.Forms.Button btn_clear3;
+        private System.Windows.Forms.Button btn_clear2;
+        private System.Windows.Forms.Button btn_clear1;
     }
 }
 

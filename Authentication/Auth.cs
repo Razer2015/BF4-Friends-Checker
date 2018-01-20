@@ -126,12 +126,12 @@ namespace Authentication
             PersonaId = parts[5];
         }
 
-        public WarsawFriends GetFriends() {
+        public WarsawFriends GetFriends(string userName) {
             try {
                 if (client.Headers["X-AjaxNavigation"] == null) {
                     client.Headers.Add("X-AjaxNavigation", "1");
                 }
-                var result = client.DownloadString($"{API}/bf4/user/{SoldierName}/friends/");
+                var result = client.DownloadString($"{API}/bf4/user/{userName}/friends/");
                 return (JsonConvert.DeserializeObject<WarsawFriends>(result));
             }
             catch {
