@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BF4_Friends_Checker", "BF4_Friends_Checker.csproj", "{77204281-9CA7-4D74-B084-20E8AA3D1188}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BF4_Friends_Checker", "FriendsChecker\BF4_Friends_Checker.csproj", "{77204281-9CA7-4D74-B084-20E8AA3D1188}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendsCheckerV2", "FriendsCheckerV2\FriendsCheckerV2.csproj", "{12204A43-72FD-410D-8A03-72109C743D3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{77204281-9CA7-4D74-B084-20E8AA3D1188}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77204281-9CA7-4D74-B084-20E8AA3D1188}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77204281-9CA7-4D74-B084-20E8AA3D1188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12204A43-72FD-410D-8A03-72109C743D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12204A43-72FD-410D-8A03-72109C743D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12204A43-72FD-410D-8A03-72109C743D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12204A43-72FD-410D-8A03-72109C743D3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30D8170D-890B-4A7E-8C8C-3EA7D9BBB70A}
 	EndGlobalSection
 EndGlobal
